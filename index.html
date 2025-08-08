@@ -1,0 +1,34 @@
+index original
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Monitoreo Ambiental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard de Monitoreo Ambiental (IPv6)</h1>
+        <div class="status">
+            Última actualización: <span id="last-update">Nunca</span>
+        </div>
+        <div class="charts-container">
+            <div class="chart-card">
+                <h2>Temperatura y Humedad</h2>
+                <canvas id="tempHumChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h2>Nivel de Luz</h2>
+                <canvas id="lightChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluimos la librería Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <!-- Incluimos nuestro script -->
+    <script src="app.js"></script>
+</body>
+</html>
